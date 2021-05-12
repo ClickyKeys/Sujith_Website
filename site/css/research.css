@@ -158,7 +158,7 @@ li {
 /*Positioning, setting bg and border, and adding margins to create space between each section*/
 .left-element, .right-element {
     position: relative;
-    width: 95%;
+    width: 96%;
     margin: 1% 2% 1% 2%;
     border: 1px solid black;
     background-color: rgb(190, 237, 243);
