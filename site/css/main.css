@@ -106,7 +106,7 @@ h2 {
     line-height: 50px;
 }
 
-h4 {
+h3 {
     line-height: 30px;
 }
 
@@ -207,13 +207,13 @@ li {
         font-size: 20px;
     }
 
-    h4 {
-        font-size: 16px;
+    h3 {
+        font-size: 14px;
     }
 
     p, li {
         line-height: 22px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .banner, .left-element {
