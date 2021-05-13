@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 90vh;;
+    min-height: 90vh;
 }
 
 .left-element {
@@ -134,7 +134,6 @@ body {
 #footer {
     bottom: 0;
     width: 100%;
-    font-family: calibri;
     text-align: center;
     background-color: rgb(160, 215, 233)
 }
