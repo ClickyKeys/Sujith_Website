@@ -83,38 +83,28 @@ h1 {
 
 h2 {
     top: 0;
-    margin: 20px;
-    font-size: 1.75em;
     color: black
 }
 
 h3 {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 1.25em;
+    padding: 20px 20px 10px 20px;
     color: black
 }
 
 p {
     margin: 0;
     padding: 30px;
-    font-size: 1.15em;
+    font-size: 18px;
 }
 
 ul {
-    margin-top: 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    padding: 0px 30px 30px 30px;
     line-height: 22px;
-    font-size: 1.15em;
-    margin: 30px;
+    font-size: 18px;
 }
 
 li {
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 #footer {
@@ -157,11 +147,10 @@ li {
 
 /*Positioning, setting bg and border, and adding margins to create space between each section*/
 .left-element, .right-element {
+    margin-top: 2%;
+    margin-bottom: 2%;
     position: relative;
     width: 96%;
-    margin: 1% 2% 1% 2%;
-    border: 1px solid black;
-    background-color: rgb(190, 237, 243);
 }
 
 .left-element {
@@ -170,53 +159,108 @@ li {
 
 .right-element {
     text-align: left;
+    border: 1px solid black;
+    background-color: rgb(190, 237, 243);
 }
 
 @media(min-width: 1024px) {
     h1{
-        font-size: 2.5em;
+        font-size: 4em;
     }
 
     .left-element {
+        margin-left: 2%;
         float: left;
-        width: 21%;
+        width: 23%;
     }
 
     .right-element {
+        margin-right: 2%;
         float: left;
-        width: 71%;
+        width: 73%;
     }
 }
 
 @media(min-width: 768px) and (max-width: 1023px) {
     h1{
-        font-size: 2em;
+        font-size: 3em;
     }
 
-    .left-element, .right-element {
+    .left-element {
         float: left;
         width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .right-element {
+        float: left;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
 @media(min-width: 375px) and (max-width: 767px) {
     h1{
-        font-size:1.5em;
+        font-size:2em;
     }
 
-    .left-element, .right-element {
+    h2 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .left-element {
         float: left;
         width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .right-element {
+        float: left;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
 @media(max-width: 374px) {
-    h1{
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
         font-size: 1em;
     }
 
-    .left-element, .right-element {
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .left-element {
         float: left;
         width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .right-element {
+        float: left;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
