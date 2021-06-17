@@ -35,6 +35,10 @@ h4 {
     font-size: 1rem;
 }
 
+.navbar {
+    background-color:rgb(160, 215, 233);
+}
+
 .navbar .navbar-nav .nav-link {
     font-size: 1.1em;
     color: rgb(24, 172, 221);
