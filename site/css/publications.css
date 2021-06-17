@@ -11,89 +11,12 @@ html {
 }
 
 body {
-    clear: left;
     min-height: 100vh;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     background-color:rgb(160, 215, 233);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header {
-    position: relative;
-    text-align: center;
-    max-width: 96%;
-    height: auto;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: calibri;
-    color: white;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    padding: 2.5%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(160, 215, 233, .5);
-}
-
-/*#quickscroll {
-    position: absolute;
-    width: 100%;
-    bottom: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.button {
-    font-size: 30px;
-    text-decoration: none;
-    padding: 2px 6px 2px 6px;
-    color: white;
-    background-color: rgba(160, 215, 233, .5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(37, 37, 37, 0.5);
-    border-bottom: 1px solid rgba(37, 37, 37, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    white-space: nowrap;
-}*/
-
-h2 {
-    top: 0;
-    color: black;
-    line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-h3 {
-    padding: 0px 30px 0px 30px;
-    color: black;
-    line-height: 50px
-}
-
-p {
-    margin: 0;
-    padding: 30px 30px 0px 30px;
-    line-height: 22px;
-}
-
-ul {
-    padding: 0px 30px 30px 30px;
-    line-height: 22px;
-}
-
-li {
-    margin-left: 25px;
 }
 
 #nav {
@@ -132,26 +55,77 @@ li {
     opacity: 0.7;
 }
 
-#HQ, #SOU, #NMU {
+header {
     position: relative;
-    float: left;
-    width: 100%;
-    padding: 3% 0 3% 0;
-    clear: left;
+    text-align: center;
+    max-width: 96%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
 }
 
-#footer {
-    clear: left;
+img {
     width: 100%;
-    height: 25px;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 2.5%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(160, 215, 233, .5);
+}
+
+h2 {
     top: 0;
-    text-align: center;
-    background-color: rgb(160, 215, 233)
+    margin: 20px;
+    font-size: 1.75em;
+    color: black
+}
+
+h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.25em;
+    color: black
+}
+
+p {
+    margin: 0;
+    padding: 30px;
+    font-size: 1.15em;
+}
+
+ul {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 1.15em;
+    margin: 30px;
+}
+
+li {
+    margin-left: 50px;
+}
+
+#HQ, #SOU, #NMU {
+    width: 100%;
+    clear: left;
 }
 
 /*Positioning, setting bg and border, and adding margins to create space between each section*/
 .left-element, .right-element {
-    float: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
     width: 96%;
 }
 
@@ -165,17 +139,26 @@ li {
     background-color: rgb(190, 237, 243);
 }
 
+#footer {
+    clear: left;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    text-align: center;
+    background-color: rgb(160, 215, 233)
+}
+
 @media screen and (min-width: 1441px) {
     .left-element {
         margin-left: 2%;
         float: left;
-        width: 23%;
+        width: 13%;
     }
 
     .right-element {
         margin-right: 2%;
         float: left;
-        width: 73%;
+        width: 83%;
     }
 
     h1 {
@@ -199,13 +182,13 @@ li {
     .left-element {
         margin-left: 2%;
         float: left;
-        width: 23%;
+        width: 13%;
     }
 
     .right-element {
         margin-right: 2%;
         float: left;
-        width: 73%;
+        width: 83%;
     }
 
     h1 {
@@ -229,13 +212,13 @@ li {
     .left-element {
         margin-left: 2%;
         float: left;
-        width: 23%;
+        width: 13%;
     }
 
     .right-element {
         margin-right: 2%;
         float: left;
-        width: 73%;
+        width: 83%;
     }
 
     h1 {
@@ -333,10 +316,6 @@ li {
         display: block; 
     }
 
-    ul {
-        padding: 0px 20px 20px 20px;
-    }
-
     h1 {
         font-size: 40px;
     }
@@ -394,10 +373,6 @@ li {
 
       #nav input:checked ~ #navitems { 
           display: block; 
-    }
-
-    ul {
-        padding: 0px 10px 10px 10px;
     }
 
     h1 {
