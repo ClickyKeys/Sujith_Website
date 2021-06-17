@@ -62,14 +62,9 @@ p {
     padding: 10px;
 }
 
-.navbar, .navbar-nav {
-    background-color:rgb(160, 215, 233);
-}
-
 .navbar .navbar-nav .nav-link {
     font-size: 1.1em;
     color: rgb(24, 172, 221);
-    background-color: rgb(160, 215, 233);
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -112,13 +107,8 @@ p {
     border-top: 0;
 }
 
-#quickscrollNav #quickscroll .navbar-nav {
-    background-color: rgb(250, 250, 250);
-}
-
 #quickscroll .navbar-nav .nav-link {
     color: black;
-
 }
 
 #quickscroll .navbar-nav .nav-link:hover {
