@@ -1,104 +1,88 @@
-@charset "utf-8";
-
-/*more size styling for different screen sizes*/
-
-*, html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
-    background-color:rgb(160, 215, 233);
+    min-height: 100%;
+    height: 100%;
 }
 
 body {
-    min-height: 100vh;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    min-height: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: black;
     background-color:rgb(160, 215, 233);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1, h2 {
-    line-height: 50px;
-    font-size: 22px;
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.75rem;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;;
+    font-size: 1.5rem;
 }
 
 h4 {
-    line-height: 25px;
-    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
-p, li {
-    line-height: 22px;
-    font-size: 18px;
-}
-
-li {
-    margin-left: 25px;
-}
-
-#nav {
-    width: 96%;
-    height: 50px;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 0;
-    background-color:rgb(160, 215, 233);
-    border-bottom: 1px solid rgb(24, 172, 221);
-    position: sticky;
-    top: 0;
-}
-  
-  /* Hide Hamburger when screen is large*/
-  #nav label, #hamburger { 
-      display: none; 
-}
-  
-  /* Horizontal Menu Items */
-  #navitems { 
-      display: flex; 
-}
-
-#navitems a {
-    width: 16.66%; /* 100% / 5 tabs = 20% */
-    padding: 10px;
-    color: black;
+.navbar .navbar-nav .nav-link {
     font-size: 1.1em;
-    text-decoration: none;
-    text-align: center;
+    color: rgb(24, 172, 221);
 }
 
-#navitems a:hover {
-    opacity: 0.7;
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(0,0,0,0.7);
+    transition-duration: 0.25s;
 }
 
-#row {
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 90vh;
+#header-nav {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+    border: none;
 }
 
-.left-element {
-    float: left;
-    margin: 0 1% 0 1%;
-    padding: 10px;
-    text-align: center;
+#navContainer .navbar-toggler {
+    font-size: 18px;
+    color: rgb(24, 172, 221);
 }
 
-.right-element {
-    margin: 0 1% 0 1%;
-    float: left;
-    padding: 10px;
-    text-align: left;
+#search {
+    font-size: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-.left-element img {
+#search .fa {
+    border: none;
+    background: none;
+}
+
+.row {
+    margin: auto;
+}
+
+.spacing {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#search {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#left-element img {
     margin-top: auto;
     padding: 6px;
     height: auto;
@@ -106,338 +90,228 @@ li {
     border-radius: 50%;
 }
 
-.fa {
-    font-size: 30px;
-    width: 50px;
-    padding: 10px;
-    text-align: center;
+.icons a {
+    color: rgb(24, 172, 221);
     text-decoration: none;
-  }
-  
-.fa:hover {
-    opacity: 0.7;
 }
 
-.fa-envelope {
-    color: rgb(24, 172, 221);
-}
-  
-.fa-twitter {
-    color: rgb(24, 172, 221);
+.icons a:hover {
+    color: rgb(0,0,0,0.7);
+    transition-duration: 0.25s;
 }
 
-.fa-linkedin {
-    color: rgb(24, 172, 221);
-}
-
-.ai {
-    font-size: 30px;
-    width: 50px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-.ai:hover {
-    opacity: 0.7;
-}
-
-.ai-google-scholar-square {
-    color: rgb(24, 172, 221);
-}
-
-#footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(160, 215, 233)
-}
-
-/*@media screen and (min-width: 1441px) {
-    .left-element {
-        width: 38%;
-        margin: 0;
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    #left-element img {
+        width: 350px;
     }
 
-    .right-element {
-        width: 58%;
-        margin: 0;
+    .navbar {
+        border-bottom: 1px solid rgb(24, 172, 221);
+        height:54px;
+    }
+    
+    #main-content {
+        min-height: 92%;
+        height: 92%;
+    }
+}
+  
+  /********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #left-element img {
+        width: 300px;
+    }
+    
+    .navbar {
+        border-bottom: 1px solid rgb(24, 172, 221);
+        height: 54px;
+    }
+    
+    #main-content {
+        min-height: 92%;
+        height: 92%;
     }
 
-    h1, h2 {
-        font-size: 22px;
-    }
-
-    h4 {
+    .icons {
         font-size: 14px;
     }
 
-    p, li {
-        font-size: 16px;
-        padding-right: 50px;
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.1em;
     }
 
-    img {
-    width: 340px;
-    height: auto;
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+}
+  
+  /********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #left-element img {
+        width: 350px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav a {
+        position: relative;
+    }
+
+    .navbar .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+}
+  
+  /********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #left-element img {
+        width: 300px;
+    }
+
+    .navbar .navbar-nav a {
+        position: relative;
+    }
+
+    .navbar .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
     }
 
     .icons {
-        font-size: 18px;
-    }
-
-    .fa, .ai {
-        width: 60px;
-    }
-}*/
-
-@media screen and (min-width: 1200px) {
-    .left-element {
-        width: 38%;
-        margin: 0;
-    }
-
-    .right-element {
-        width: 58%;
-        margin: 0;
-    }
-
-    h1, h2 {
-        font-size: 22px;
-    }
-
-    h4 {
         font-size: 14px;
     }
 
-    p, li {
-        font-size: 1.05em;
-        padding-right: 50px;
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.1em;
     }
 
-    img {
-    width: 340px;
-    height: auto;
+    h1 {
+        font-size: 1.5rem;
     }
-
-    .icons {
-        font-size: 18px;
+    
+    h2 {
+        font-size: 1.25rem;
     }
-
-    .fa, .ai {
-        width: 60px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .left-element {
-        width: 38%;
-        margin: 0;
-    }
-
-    .right-element {
-        width: 58%;
-        margin: 0;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
+    
     h4 {
-        font-size: 12px;
-    }
-
-    p, li {
-        font-size: 16px;
-        padding-right: 50px;
-    }
-
-    img {
-    width: 340px;
-    height: auto;
-    }
-
-    .icons {
-        font-size: 16px;
-    }
-
-    .fa, .ai {
-        width: 50px;
+        font-size: 1rem;
     }
 }
+  
+  
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .left-element {
-        width: 98%;
+    .navbar-nav {
+        text-align: center;
     }
 
-    .right-element {
-        width: 98%;
+    #left-element img {
+        width: 60vw;
     }
 
-    h1, h2 {
-        font-size: 20px;
+    .navbar .navbar-nav a {
+        position: relative;
     }
 
-    h4 {
-        font-size: 12px;
+    .navbar .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
     }
 
-    p, li {
-        font-size: 16px;
-    }
-    img {
-    width: 340px;
-    height: auto;
-    }
-
-    .icons {
-        font-size: 16px;
-    }
-
-    .fa, .ai {
-        width: 50px;
-    }
-}
-
-  /* Show hamburger menu when screen is small */
-  @media screen and (min-width: 400px) and (max-width: 767px){
-
-    #row {
-        padding: 10px;
-    }
-
-    .left-element {
-        width: 98%;
-    }
-
-    .right-element {
-        width: 98%;
-    }
-
-    #nav label { 
-      display: inline-block; 
-      color: black;
-      background: rgb(160, 215, 233);
-      font-style: normal;
-      font-size: 2.2em;
-      padding: 0;
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
     }
   
-    /* create vertical menu */
-    #navitems a {
-      box-sizing: border-box;
-      display: block;
+    .col-xxs-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
       width: 100%;
-      border-top: 1px solid #333;
-      background-color: rgb(160, 215, 233);;
-    }
-
-    #navitems a:hover {
-        opacity: 1;
-    }
-  
-    /* Toggle Show/Hide Menu */
-    #navitems { 
-        display: none; 
-    }
-    #nav input:checked ~ #navitems { 
-        display: block; 
-    }
-
-    h1, h2 {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 12px;
-    }
-
-    p, li {
-        font-size: 16px;
-    }
-
-    img {
-    width: 260px;
-    height: auto;
     }
 
     .icons {
-        font-size: 16px;
+        font-size: 4vw;
     }
 
-    .fa, .ai {
-        width: 50px;
-    }
-}
-
-@media screen and (max-width: 399px) {
-
-    #row {
-        padding: 10px;
+    .navbar .navbar-nav .nav-link {
+        font-size: 4vw;
     }
 
-    .left-element {
-        width: 98%;
+    h1 {
+        font-size: 6vw;
     }
-
-    .right-element {
-        width: 98%;
+    
+    h2 {
+        font-size: 4.5vw;
     }
-
-    #nav label { 
-      display: inline-block; 
-      color: black;
-      background: rgb(160, 215, 233);
-      font-style: normal;
-      font-size: 2.2em;
-      padding: 0;
-    }
-  
-    /* create vertical menu */
-    #navitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-      background-color: rgb(160, 215, 233);;
-    }
-
-    #navitems a:hover {
-        opacity: 1;
-    }
-  
-    /* Toggle Show/Hide Menu */
-    #navitems { 
-        display: none; 
-    }
-    #nav input:checked ~ #navitems { 
-        display: block; 
-    }
-
-    h1, h2 {
-        font-size: 18px;
-    }
-
+    
     h4 {
-        font-size: 12px;
-    }
-
-    p, li {
-        font-size: 16px;
-    }
-
-    img {
-    width: 200px;
-    height: auto;
-    }
-
-    .icons {
-        font-size: 16px;
-    }
-
-    .fa, .ai {
-        width: 40px;
+        font-size: 3.5vw;
     }
 }
