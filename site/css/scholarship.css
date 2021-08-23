@@ -29,7 +29,7 @@ body {
 }
 
 #header h1 {
-    font-size: 5em;
+    font-size: calc(1.525rem + 3.3vw);
     margin: 0;
     width: 100%;
     position: absolute;   
@@ -41,10 +41,8 @@ body {
     background-color: rgba(160, 215, 233, .5);
 }
 
-/*h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 1.75rem;
+h2, h3, h4 {
+    font-size: calc(.75rem + 1.30vw);
 }
 
 h2 {
@@ -54,17 +52,21 @@ h2 {
 
 h4 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 1rem;
-}*/
+}
 
-p {
+p, h4 {
     padding: 10px;
 }
 
-.navbar .navbar-nav .nav-link {
-    font-size: 1.1em;
+#navContainer .navbar-nav .nav-link{
+    font-size: calc(0.35rem + 0.80vw);
     color: rgb(24, 172, 221);
+}
+
+#main-content ul {
+    padding-right: 10px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -105,6 +107,7 @@ p {
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(24, 172, 221);
     border-top: 0;
+    font-size: calc(0.35rem + 0.80vw);
 }
 
 #quickscroll .navbar-nav .nav-link {
@@ -117,8 +120,16 @@ p {
     transition-duration: 0.25s;
 }
 
-#right-element {
-    background-color: rgb(250, 250, 250, 0.3);
+#HQ #right-element, #SOU #right-element, #NMU #right-element {
+    background-color: rgb(250, 250, 250, 0.3);    
+}
+
+#Grants_Awards_Box {
+    background-color: rgb(250, 250, 250, 0.3);    
+}
+
+#Grants_Awards_Box #Grants #left-element, #Grants_Awards_Box #Awards #left-element {
+    background-color: rgb(160, 215, 233);
 }
 
 .bg-img {
@@ -132,14 +143,27 @@ p {
         width: 350px;
     }
 
-    .navbar {
+    #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
         height: 54px;
+    }
+
+    #navContainer .navbar-nav .nav-link {
+        font-size: calc(0.35rem + 0.80vw);
+        color: rgb(24, 172, 221);
+    }
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: 1.1rem;
     }
     
     #main-content {
         min-height: 92%;
         height: 92%;
+    }
+
+    #main-content #right-element {
+        padding-right: 20px;
     }
 }
   
@@ -149,9 +173,18 @@ p {
         width: 300px;
     }
     
-    .navbar {
+    #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
         height: 54px;
+    }
+
+    #navContainer .navbar-nav .nav-link {
+       font-size: calc(0.35rem + 0.80vw);
+        color: rgb(24, 172, 221);
+    }
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: 1.1rem;
     }
     
     #main-content {
@@ -161,10 +194,6 @@ p {
 
     .icons {
         font-size: 14px;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        font-size: 1.1em;
     }
 }
   
@@ -178,11 +207,15 @@ p {
         text-align: center;
     }
 
-    .navbar .navbar-nav a {
+    #navContainer .navbar-nav .nav-link {
+        font-size: 1.3rem;
+    }
+
+    #navContainer .navbar-nav a {
         position: relative;
     }
 
-    .navbar .navbar-nav a::after {
+    #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -195,14 +228,18 @@ p {
         height: 1px;
     }
 
-    .navbar .navbar-nav a:hover::after {
+    #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
+    }
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: 1rem;
     }
 }
   
   /********** Extra small devices only **********/
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar-nav {
         text-align: center;
     }
@@ -211,11 +248,15 @@ p {
         width: 300px;
     }
 
-    .navbar .navbar-nav a {
+    #navContainer .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #navContainer .navbar-nav a {
         position: relative;
     }
 
-    .navbar .navbar-nav a::after {
+    #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -228,17 +269,17 @@ p {
         height: 1px;
     }
 
-    .navbar .navbar-nav a:hover::after {
+    #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
     }
 
-    .icons {
-        font-size: 14px;
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: .9rem;
     }
 
-    .navbar .navbar-nav .nav-link {
-        font-size: 1.1em;
+    .icons {
+        font-size: 14px;
     }
 }
   
@@ -254,11 +295,15 @@ p {
         width: 60vw;
     }
 
-    .navbar .navbar-nav a {
+    #navContainer.navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #navContainer .navbar-nav a {
         position: relative;
     }
 
-    .navbar .navbar-nav a::after {
+    #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -271,9 +316,13 @@ p {
         height: 1px;
     }
 
-    .navbar .navbar-nav a:hover::after {
+    #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
+    }
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: .9rem;
     }
   
     .col-xxs-12 {
@@ -289,10 +338,6 @@ p {
         font-size: 4vw;
     }
 
-    .navbar .navbar-nav .nav-link {
-        font-size: 4vw;
-    }
-
     h1 {
         font-size: 6vw;
     }
@@ -301,7 +346,7 @@ p {
         font-size: 4.5vw;
     }
     
-    h4 {
+    /*h4 {
         font-size: 3.5vw;
-    }
+    }*/
 }
