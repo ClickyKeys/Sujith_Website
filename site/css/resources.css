@@ -274,8 +274,11 @@ p, h4 {
     .icons {
         font-size: 14px;
     }
+
+    h2, h3, h4 {
+        font-size: calc(.75rem + 1.30vw);
+    }
 }
-  
   
   /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -331,15 +334,7 @@ p, h4 {
         font-size: 4vw;
     }
 
-    h1 {
-        font-size: 6vw;
+    h2, h3, h4 {
+        font-size: calc(.75rem + 1.30vw);
     }
-    
-    h2 {
-        font-size: 4.5vw;
-    }
-    
-    /*h4 {
-        font-size: 3.5vw;
-    }*/
 }

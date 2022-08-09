@@ -152,16 +152,8 @@ h4 {
         color: rgb(24, 172, 221);
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    h2 {
-        font-size: 1.25rem;
-    }
-    
-    h4 {
-        font-size: 1rem;
+    .right-element h2, .right-element h3, .right-element h4 {
+        font-size: calc(.75rem + 1.30vw);
     }
 }
   
@@ -201,16 +193,8 @@ h4 {
         transition-duration: 0.25s;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    h4 {
-        font-size: 1rem;
+    .right-element h2, .right-element h3, .right-element h4 {
+        font-size: calc(.75rem + 1.30vw);
     }
 }
   
@@ -254,16 +238,8 @@ h4 {
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    h2 {
-        font-size: 1.25rem;
-    }
-    
-    h4 {
-        font-size: 1rem;
+    .right-element h2, .right-element h3, .right-element h4 {
+        font-size: calc(.75rem + 1.30vw);
     }
 }
   
@@ -318,15 +294,7 @@ h4 {
         font-size: 4vw;
     }
 
-    h1 {
-        font-size: 6vw;
-    }
-    
-    h2 {
-        font-size: 4.5vw;
-    }
-    
-    h4 {
-        font-size: 3.5vw;
+    h2, h3, h4 {
+        font-size: calc(.75rem + 1.30vw);
     }
 }
