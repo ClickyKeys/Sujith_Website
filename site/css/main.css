@@ -36,7 +36,7 @@ h4 {
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: calc(0.35rem + 0.80vw);
+    font-size: 18px;
     color: rgb(24, 172, 221);
 }
 
@@ -51,6 +51,7 @@ h4 {
     color: black;
     border: none;
 }
+
 
 #navContainer .navbar-toggler {
     font-size: 18px;
@@ -84,10 +85,26 @@ h4 {
 
 #left-element img {
     margin-top: auto;
+    width: 500px;
     padding: 6px;
     height: auto;
     background:rgb(24, 172, 221);
     border-radius: 50%;
+}
+
+#main-content {
+    min-height: 92%;
+    height: 92%;
+}
+
+.box{
+    margin: auto;
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons a {
@@ -102,23 +119,9 @@ h4 {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-    #left-element img {
-        width: 350px;
-    }
-
-    .navbar {
+    #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
-        height:54px;
-    }
-
-    .navbar .navbar-nav .nav-link {
-        font-size: calc(0.35rem + 0.80vw);
-        color: rgb(24, 172, 221);
-    }
-    
-    #main-content {
-        min-height: 92%;
-        height: 92%;
+        height: 54px;
     }
 }
   
@@ -150,6 +153,10 @@ h4 {
     .navbar .navbar-nav .nav-link {
         font-size: calc(0.35rem + 0.80vw);
         color: rgb(24, 172, 221);
+    }
+
+    .box{
+        width: 80%;
     }
 
     .right-element h2, .right-element h3, .right-element h4 {
@@ -193,7 +200,11 @@ h4 {
         transition-duration: 0.25s;
     }
 
-    .right-element h2, .right-element h3, .right-element h4 {
+    .box{
+        width: 80%;
+    }
+
+    .right-element #box h2, .right-element #box h3, .right-element #box h4 {
         font-size: calc(.75rem + 1.30vw);
     }
 }
@@ -238,6 +249,10 @@ h4 {
         font-size: 14px;
     }
 
+    .box{
+        width: 80%;
+    }
+    
     .right-element h2, .right-element h3, .right-element h4 {
         font-size: calc(.75rem + 1.30vw);
     }

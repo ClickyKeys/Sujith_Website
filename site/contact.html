@@ -7,11 +7,11 @@
         <title>Sujith Ramachandran</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- js -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/37successfulmsgonsubmit.js"></script>
     </head>
 
     <body>
@@ -25,7 +25,9 @@
                         <li><a class="nav-link px-4 active" href="index.html">Home</a></li>
                         <li><a class="nav-link px-4" href="scholarship.html">Scholarship</a></li>
                         <li><a class="nav-link px-4" href="resources.html">Resources</a></li>
-                        <li><a class="nav-link px-4" href="contact.html">Contact</a></li>
+                        <li>
+                            <a class="nav-link px-4" href="javascript:void(0)" onclick="location.href='https://www.youtube.com/watch?v=a3Z7zEc7AXQ'">CV</a>
+                        </li>
                     </ul>
                     <form id="search" class="d-flex">
                         <input type="search" class="form-control" placeholder="Search" aria-label="Search">
@@ -35,21 +37,21 @@
             </div>
         </nav>
 
-        <div id="main-content" class="container px-0">
-            <h3> Contact me! </h3>
-            <form action="">
+        <div id="main-content" class="container">
+            <div class = "box">
+                <h3> Contact me! </h3>
                 <div class = "name">
-                    <i class = "fa fa-user fa-2x px-2"></i>
+                    <i class = "fa fa-user fa-2x mr-2"></i>
                     <input id="name" type="text" placeholder = "Name">
                 </div>
 
                 <div class = "email">
-                    <i class = "fa fa-envelope fa-2x px-2"></i>
+                    <i class = "fa fa-envelope fa-2x mr-2"></i>
                     <input id="email" type="text" placeholder = "Email address">
                 </div>
 
                 <div class = "message">
-                    <textarea id="message" style="height:200px" placeholder = "Message"></textarea>
+                    <textarea id="message" placeholder = "Message"></textarea>
                 </div>
 
                 <div class = "button">
@@ -60,7 +62,8 @@
                     <div class = "success" id = "success">Your Message Sent Successfully! </div>
                     <div class = "error" id = "error">You Must Complete All Fields</div>
                 </div>
-            </form>
+            </div>
         </div>
+        <script src="js/displayalert.js"></script>
     </body>
 </html>
