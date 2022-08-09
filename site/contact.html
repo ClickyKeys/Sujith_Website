@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sujith Ramachandran</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contact.css">
         
         <!-- js -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/37successfulmsgonsubmit.js"></script>
     </head>
 
     <body>
@@ -33,5 +34,33 @@
                 </div>
             </div>
         </nav>
+
+        <div id="main-content" class="container px-0">
+            <h3> Contact me! </h3>
+            <form action="">
+                <div class = "name">
+                    <i class = "fa fa-user fa-2x px-2"></i>
+                    <input id="name" type="text" placeholder = "Name">
+                </div>
+
+                <div class = "email">
+                    <i class = "fa fa-envelope fa-2x px-2"></i>
+                    <input id="email" type="text" placeholder = "Email address">
+                </div>
+
+                <div class = "message">
+                    <textarea id="message" style="height:200px" placeholder = "Message"></textarea>
+                </div>
+
+                <div class = "button">
+                    <button id = "button" onclick = "">Submit</button>
+                </div>
+
+                <div class = "alert">
+                    <div class = "success" id = "success">Your Message Sent Successfully! </div>
+                    <div class = "error" id = "error">You Must Complete All Fields</div>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
