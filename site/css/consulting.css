@@ -105,3 +105,190 @@ h2 {
         padding-right: 20px;
     }
 }
+
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #left-element img {
+        width: 300px;
+    }
+    
+    .navbar {
+        border-bottom: 1px solid rgb(24, 172, 221);
+        height: 54px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: calc(0.35rem + 0.80vw);
+        color: rgb(24, 172, 221);
+    }
+
+    .icons {
+        font-size: 14px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: calc(0.35rem + 0.80vw);
+        color: rgb(24, 172, 221);
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .right-element h2, .right-element h3, .right-element h4 {
+        font-size: calc(.75rem + 1.30vw);
+    }
+}
+  
+  /********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #left-element img {
+        width: 350px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .navbar .navbar-nav a {
+        position: relative;
+    }
+
+    .navbar .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .right-element #box h2, .right-element #box h3, .right-element #box h4 {
+        font-size: calc(.75rem + 1.30vw);
+    }
+}
+  
+  /********** Extra small devices only **********/
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #left-element img {
+        width: 300px;
+    }
+
+    .navbar .navbar-nav a {
+        position: relative;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
+    }
+
+    .icons {
+        font-size: 14px;
+    }
+
+    .box{
+        width: 100%;
+    }
+    
+    .right-element h2, .right-element h3, .right-element h4 {
+        font-size: calc(.75rem + 1.30vw);
+    }
+}
+  
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #left-element img {
+        width: 60vw;
+    }
+
+    #navContainer.navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #navContainer .navbar-nav a {
+        position: relative;
+    }
+
+    #navContainer .navbar-nav a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+        color: transparent;
+        width: 0%;
+        content: '.';
+        height: 1px;
+    }
+
+    #navContainer .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
+    }
+
+    .box{
+        width: 100%;
+    }
+  
+    .col-xxs-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+    }
+
+    .icons {
+        font-size: 4vw;
+    }
+
+    h2, h3, h4 {
+        font-size: calc(.75rem + 1.30vw);
+    }
+}
