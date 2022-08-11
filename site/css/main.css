@@ -17,6 +17,29 @@ body {
     margin: auto;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#navContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#main-content {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -51,7 +74,6 @@ h4 {
     color: black;
     border: none;
 }
-
 
 #navContainer .navbar-toggler {
     font-size: 18px;
@@ -92,11 +114,6 @@ h4 {
     border-radius: 50%;
 }
 
-#main-content {
-    min-height: 92%;
-    height: 92%;
-}
-
 .box{
     margin: auto;
     width: 700px;
@@ -121,7 +138,7 @@ h4 {
 @media (min-width: 1200px) {
     #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
-        height: 54px;
+        /* height: 54px; */
     }
 }
   
@@ -140,11 +157,6 @@ h4 {
         font-size: calc(0.35rem + 0.80vw);
         color: rgb(24, 172, 221);
     }
-    
-    #main-content {
-        min-height: 92%;
-        height: 92%;
-    }
 
     .icons {
         font-size: 14px;
@@ -156,7 +168,7 @@ h4 {
     }
 
     .box{
-        width: 80%;
+        width: 100%;
     }
 
     .right-element h2, .right-element h3, .right-element h4 {
@@ -201,7 +213,7 @@ h4 {
     }
 
     .box{
-        width: 80%;
+        width: 100%;
     }
 
     .right-element #box h2, .right-element #box h3, .right-element #box h4 {
@@ -250,7 +262,7 @@ h4 {
     }
 
     .box{
-        width: 80%;
+        width: 100%;
     }
     
     .right-element h2, .right-element h3, .right-element h4 {
@@ -258,8 +270,7 @@ h4 {
     }
 }
   
-  
-  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
 
     .navbar-nav {
@@ -294,6 +305,10 @@ h4 {
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
+    }
+
+    .box{
+        width: 100%;
     }
   
     .col-xxs-12 {

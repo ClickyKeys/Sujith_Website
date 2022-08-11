@@ -74,8 +74,22 @@ p, h4 {
     color: rgb(24, 172, 221);
 }
 
-#main-content ul {
-    padding-right: 10px;
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#main-content {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.5rem;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -133,16 +147,11 @@ p, h4 {
 @media (min-width: 1200px) {
     #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
-        height: 54px;
+        /* height: 54px; */
     }
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: 1.1rem;
-    }
-    
-    #main-content {
-        min-height: 92%;
-        height: 92%;
     }
 
     #main-content #right-element {
@@ -166,11 +175,6 @@ p, h4 {
         font-size: 1.1rem;
     }
     
-    #main-content {
-        min-height: 92%;
-        height: 92%;
-    }
-
     .icons {
         font-size: 14px;
     }

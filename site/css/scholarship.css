@@ -10,6 +10,24 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#main-content {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
 /* Customize the container margins */
 .container {
     max-width: 90%;
@@ -136,16 +154,11 @@ p, h4 {
 @media (min-width: 1200px) {
     #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
-        height: 54px;
+        /* height: 54px; */
     }
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: 1.1rem;
-    }
-    
-    #main-content {
-        min-height: 92%;
-        height: 92%;
     }
 
     #main-content #right-element {
@@ -167,11 +180,6 @@ p, h4 {
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: 1.1rem;
-    }
-    
-    #main-content {
-        min-height: 92%;
-        height: 92%;
     }
 
     .icons {
@@ -277,7 +285,6 @@ p, h4 {
         font-size: calc(.75rem + 1.30vw);
     }
 }
-  
   
   /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
