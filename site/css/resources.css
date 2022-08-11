@@ -179,6 +179,10 @@ p, h4 {
         font-size: 14px;
     }
 
+    h1 {
+        font-size: calc(1.1rem + 1.30vw);
+    }
+
     h2, h3, h4 {
         font-size: calc(.75rem + 1.30vw);
     }
@@ -222,6 +226,10 @@ p, h4 {
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: 1rem;
+    }
+
+    h1 {
+        font-size: calc(1.1rem + 1.30vw);
     }
 
     h2, h3, h4 {
@@ -271,6 +279,10 @@ p, h4 {
 
     .icons {
         font-size: 14px;
+    }
+
+    h1 {
+        font-size: calc(1.1rem + 1.30vw);
     }
 
     h2, h3, h4 {
@@ -330,6 +342,10 @@ p, h4 {
 
     .icons {
         font-size: 4vw;
+    }
+
+    h1 {
+        font-size: calc(1.1rem + 1.30vw);
     }
 
     h2, h3, h4 {
