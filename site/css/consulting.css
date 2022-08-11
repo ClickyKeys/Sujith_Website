@@ -10,6 +10,24 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#main-content {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
 /* Customize the container margins */
 .container {
     max-width: 90%;
@@ -41,13 +59,28 @@ body {
     background-color: rgba(160, 215, 233, .5);
 }
 
-#header-box {
-    background: rgb(24, 172, 221, 0.5);
+h2 {
+    text-align: center;
+    padding: 20px;
 }
 
-#navContainer .navbar-nav .nav-link{
+h4 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 1rem;
+}
+
+p, h4 {
+    padding: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
     font-size: 18px;
     color: rgb(24, 172, 221);
+}
+
+#main-content ul {
+    padding-right: 10px;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -65,29 +98,6 @@ body {
 #navContainer .navbar-toggler {
     font-size: 18px;
     color: rgb(24, 172, 221);
-}
-
-h2 {
-    text-align: center;
-    padding: 20px;
-}
-
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-#main-content {
-    padding-bottom: 2.5rem;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 2.5rem;
 }
 
 /********** Large devices only **********/
@@ -108,34 +118,25 @@ h2 {
 
   /********** Medium devices only **********/
   @media (min-width: 992px) and (max-width: 1199px) {
-    #left-element img {
-        width: 300px;
-    }
-    
-    .navbar {
+    #navContainer {
         border-bottom: 1px solid rgb(24, 172, 221);
         height: 54px;
     }
 
-    .navbar .navbar-nav .nav-link {
-        font-size: calc(0.35rem + 0.80vw);
+    #navContainer .navbar-nav .nav-link {
+       font-size: calc(0.35rem + 0.80vw);
         color: rgb(24, 172, 221);
     }
 
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: 1.1rem;
+    }
+    
     .icons {
         font-size: 14px;
     }
 
-    .navbar .navbar-nav .nav-link {
-        font-size: calc(0.35rem + 0.80vw);
-        color: rgb(24, 172, 221);
-    }
-
-    .box{
-        width: 100%;
-    }
-
-    .right-element h2, .right-element h3, .right-element h4 {
+    h2, h3, h4 {
         font-size: calc(.75rem + 1.30vw);
     }
 }
@@ -150,15 +151,15 @@ h2 {
         text-align: center;
     }
 
-    .navbar .navbar-nav .nav-link {
+    #navContainer .navbar-nav .nav-link {
         font-size: 1.3rem;
     }
 
-    .navbar .navbar-nav a {
+    #navContainer .navbar-nav a {
         position: relative;
     }
 
-    .navbar .navbar-nav a::after {
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -171,16 +172,16 @@ h2 {
         height: 1px;
     }
 
-    .navbar .navbar-nav a:hover::after {
+    #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
+    } */
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: 1rem;
     }
 
-    .box{
-        width: 100%;
-    }
-
-    .right-element #box h2, .right-element #box h3, .right-element #box h4 {
+    h2, h3, h4 {
         font-size: calc(.75rem + 1.30vw);
     }
 }
@@ -195,15 +196,15 @@ h2 {
         width: 300px;
     }
 
-    .navbar .navbar-nav a {
-        position: relative;
-    }
-
-    .navbar .navbar-nav .nav-link {
+    #navContainer .navbar-nav .nav-link {
         font-size: 1.1rem;
     }
 
-    .navbar .navbar-nav a::after {
+    #navContainer .navbar-nav a {
+        position: relative;
+    }
+
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -216,25 +217,25 @@ h2 {
         height: 1px;
     }
 
-    .navbar .navbar-nav a:hover::after {
+    #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
+    } */
+
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: .9rem;
     }
 
     .icons {
         font-size: 14px;
     }
 
-    .box{
-        width: 100%;
-    }
-    
-    .right-element h2, .right-element h3, .right-element h4 {
+    h2, h3, h4 {
         font-size: calc(.75rem + 1.30vw);
     }
 }
   
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
 
     .navbar-nav {
@@ -253,7 +254,7 @@ h2 {
         position: relative;
     }
 
-    #navContainer .navbar-nav a::after {
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -269,10 +270,10 @@ h2 {
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
-    .box{
-        width: 100%;
+    #quickscrollNav #quickscroll .navbar-nav {
+        font-size: .9rem;
     }
   
     .col-xxs-12 {

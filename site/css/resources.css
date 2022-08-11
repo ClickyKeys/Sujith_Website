@@ -69,7 +69,7 @@ p, h4 {
 }
 
 
-#navContainer .navbar-nav .nav-link{
+.navbar .navbar-nav .nav-link {
     font-size: 18px;
     color: rgb(24, 172, 221);
 }
@@ -202,7 +202,7 @@ p, h4 {
         position: relative;
     }
 
-    #navContainer .navbar-nav a::after {
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -218,7 +218,7 @@ p, h4 {
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: 1rem;
@@ -247,7 +247,7 @@ p, h4 {
         position: relative;
     }
 
-    #navContainer .navbar-nav a::after {
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -263,7 +263,7 @@ p, h4 {
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: .9rem;
@@ -297,7 +297,7 @@ p, h4 {
         position: relative;
     }
 
-    #navContainer .navbar-nav a::after {
+    /* #navContainer .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -313,7 +313,7 @@ p, h4 {
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     #quickscrollNav #quickscroll .navbar-nav {
         font-size: .9rem;

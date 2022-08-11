@@ -194,23 +194,21 @@ h4 {
         position: relative;
     }
 
-    .navbar .navbar-nav a::after {
+    /* .navbar .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        background-color: white;
         color: transparent;
         width: 0%;
         content: '.';
-        height: 1px;
     }
 
     .navbar .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     .box{
         width: 100%;
@@ -239,23 +237,21 @@ h4 {
         font-size: 1.1rem;
     }
 
-    .navbar .navbar-nav a::after {
+    /* .navbar .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        background-color: white;
         color: transparent;
         width: 0%;
         content: '.';
-        height: 1px;
     }
 
     .navbar .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     .icons {
         font-size: 14px;
@@ -285,27 +281,26 @@ h4 {
         font-size: 1.1rem;
     }
 
-    #navContainer .navbar-nav a {
-        position: relative;
-    }
-
-    #navContainer .navbar-nav a::after {
+    /* .navbar .navbar-nav a::after {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        background-color: white;
         color: transparent;
         width: 0%;
         content: '.';
-        height: 1px;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        width: 50%;
+        transition-duration: 0.25s;
     }
 
     #navContainer .navbar-nav a:hover::after {
         width: 50%;
         transition-duration: 0.25s;
-    }
+    } */
 
     .box{
         width: 100%;
