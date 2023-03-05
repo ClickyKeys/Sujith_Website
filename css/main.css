@@ -183,7 +183,7 @@ h4 {
     }
 
     .navbar-nav {
-        text-align: center;
+        text-align: left;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -222,7 +222,7 @@ h4 {
   /********** Extra small devices only **********/
 @media (max-width: 768px) {
     .navbar-nav {
-        text-align: center;
+        text-align: left;
     }
 
     #left-element img {
@@ -270,7 +270,7 @@ h4 {
 @media (max-width: 479px) {
 
     .navbar-nav {
-        text-align: center;
+        text-align: left;
     }
 
     #left-element img {
